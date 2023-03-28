@@ -1,0 +1,29 @@
+-- SQLite
+CREATE TABLE "Patient"   
+(
+PatientId INT PRIMARY KEY NOT NULL,
+PatientName TEXT NOT NULL,
+PatientAddress TEXT NOT NULL,
+PatientPhoneNumber TEXT NOT NULL
+);
+
+INSERT INTO Patient (PatientId, PatientName, PatientAddress, PatientPhoneNumber)
+VALUES("59z0874Q8", "Karson Franecki", "743 Ankunding Summit Crooksmouth Mississippi Bedfordshire", "1-775-991-2818");
+
+CREATE TABLE CPAPDATA
+(
+CollectionDate TEXT NOT NULL,
+LightsOut INT NOT NULL,
+LightsOn INT NOT NULL,
+TotalTimeRecording INT NOT NULL,
+WakeDuringSleep TEXT NOT NULL,
+SleepOnset TEXT NOT NUll,
+SleepEfficiency TEXT NOT NULL,
+SleepLatency TEXT NOT NULL,
+RLatency TEXT NOT NULL,
+TotalNumAwakenings INT NOT NULL,
+WakeAfterSleepOnset TEXT NOT NUll
+);
+
+INSERT INTO CPAPDATA(CollectionDate, LightsOut, LightsOn, TotalTimeRecording, WakeDuringSleep, SleepOnset, SleepEfficiency, SleepLatency, RLatency, TotalNumAwakenings, WakeAfterSleepOnset)
+VALUES("Sat Feb 04 2023 01:32:14 GMT-0500 (Eastern Standard Time)", "1679590686431", "1679590696543", (LightsOut - LightsOn), "26.5 min", "1679592667648", "72.4%", "31.5 min", "111.0 min", "11", "61.5 min");
